@@ -29,6 +29,8 @@ services:
     restart: always
     networks:
       - monitoring
+    environment:
+      - HOST_PROC=/host/proc
     volumes:
       - $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro
       - /proc:/host/proc:ro
