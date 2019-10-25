@@ -11,6 +11,7 @@ services:
       - monitoring
     volumes:
       - grafana-volume:/var/lib/grafana
+      - $PWD/grafana.ini:/etc/grafana/grafana.ini
 
   influxdb:
     image: influxdb
