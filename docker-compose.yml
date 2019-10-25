@@ -30,7 +30,8 @@ services:
     networks:
       - monitoring
     volumes:
-      - $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro  
+      - $PWD/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - /proc:/host/proc:ro
 
 networks:
   monitoring:
