@@ -8,7 +8,9 @@ https://hub.docker.com/_/telegraf
 need to create the network and volumns before running docker compose up
 
 server1$ docker network create monitoring
+
 server1$ docker volume create grafana-volume
+
 server1$ docker volume create influxdb-volume
 
 # docker_grafana
